@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+::selection{
+  color: #fff;
+  background: #007bff;
+}
+body{
+  display: flex;flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+ background: #e0e1e2;;
+}
+.navv{
+  height: 66px;
+  width: 100%;
+}
+.nav{
+  width:100%;
+  background-color:  #2b537f;
+  border: 3px solid white;
+}
+
+span{
+  color:rgb(9, 9, 9);
+  font-size: 1.8rem;
+  padding-left: 30px;
+  line-height: 60px;
+  
+}
+
+.nav ul{
+  float: right;
+  margin-right:30px ;
+}
+
+.nav ul li{
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 60px;
+ }
+
+.nav ul li a{
+  padding: 15px 10px;
+  color:black;
+}
+
+.nav ul li a:hover{
+  color: rgb(240, 237, 237);
+}
+
+.nav ul li:hover{
+  transform: scale(1.5);
+  transition: transform 0.6s;
+}
+
+@media (max-width:732px){
+
+  .nav ul{
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      top: 60px;
+      background-color:antiquewhite;
+  
+
+  }
+  .nav ul li{
+      display: block;
+      margin: 0;
+      width: 100%;
+  }
+  .nav ul li a{
+      color:black;
+  }
+  .nav ul li:hover{
+        background: black;
+  }
+  .nav ul li:hover a{
+      color: white;
+  }
+  nav ul.slide{
+      left: 0;
+      transition: 2s;
+  }
+}
+
+.jo{
+    width: 100%;
+    height:800px;
+}
+.jo img{
+    margin-left: 520px;
+    margin-top:30px;
+    
+}
+.jo h1{
+    margin-left: 625px;
+margin-top: 20px;
+background-color: chartreuse;
+width: 420px;
+height: 50px;
+text-align: center;
+border: 3px solid grey;
+}
+
+.kee{
+    width:150px;
+    height: 50px;
+    margin-top: 80px;
+    margin-right: 50%;
+    border: 4px solid rgb(52, 52, 52);
+    font-size: 1rem;
+    margin: 20px 50px;
+  }
+  
+  .kee a button{
+    width: 150px;
+    height: 100px;
+  }
+
+  .hi :hover{
+    color:rgb(223, 70, 70);
+  }
+  
+  .hi a :hover{
+    transform: scale(1.2);
+    transition: transform 0.6s;
+  }

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration:none;
+    list-style: none;
+    font-weight: bold;
+}
+
+.container{
+
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.5)),url(./images/kitty.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+ }
+
+.text h1{
+    font-size: 3.5rem;
+    margin-top: 20px;
+    margin-left: 225px;
+    letter-spacing: 15PX;
+    color:white;
+    text-transform: uppercase;  
+    line-height: 0.73em;
+    outline: none;
+    animation: animate 5s linear infinite;
+    float: left;
+
+}
+
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:white;
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color:white;
+        text-shadow:0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+
+
+}
+
+
+
+.text h2{
+
+    font-size: 10rem;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 15PX;
+    color:white;
+    text-transform: uppercase;
+    width: 50%;
+    line-height: 0.73em;    
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:white;
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color:white;
+        text-shadow:0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
+
+}
+
+
+
+form{
+    width:25rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(8, 3, 3, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(#f4f0f0);
+    border-radius:30px;
+    border-left: 1px solid rgba(7, 7, 7, 0.3);
+    border-top: 1px solid rgba(2, 2, 2, 0.3);
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+}
+
+h3{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(12, 11, 11);
+    opacity: .8;
+    text-shadow: 3px 3px 6px rgb(240, 235, 235);
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+}
+label{
+    font-size: 24px;
+    color:rgb(251, 246, 246);
+    text-shadow: 3px 3px 6px rgba(0,0,0,.3);
+    margin-left: 10%;
+}
+input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border:none;
+    outline:none;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    opacity: .8;
+}
+a button {
+    width: 50%;
+    margin: 30px 95px;
+    color: rgb(8, 7, 7);
+    font-size: 15px;
+    opacity: .7;
+    background-color:(wheat);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.932);
+    box-shadow: 3px 3px 5px rgba(#f8f2f2);
+    border-left: 1px solid rgb(255, 249, 249);
+    border-top: 1px solid rgba(254, 248, 248, 0.975);
+    }
+h6{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+span{
+    color:rgb(9, 9, 9);
+    font-size: 1.8rem;
+    padding-left: 30px;
+    line-height: 60px;
+    
+}
+
+.nav ul{
+    float: right;
+    margin-right:30px ;
+}
+
+.nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 60px;
+   }
+
+.nav ul li a{
+    padding: 15px 10px;
+    color:black;
+}
+
+.nav ul li a:hover{
+    color: white;
+}
+
+.nav ul li:hover{
+    transform: scale(1.5);
+    transition: transform 0.6s;
+}
+
+@media (max-width:732px){
+
+    .nav ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 60px;
+        background-color: antiquewhite;
+    
+
+    }
+    .nav ul li{
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    .nav ul li a{
+        color:black;
+    }
+    .nav ul li:hover{
+          background: black;
+    }
+    .nav ul li:hover a{
+        color: white;
+    }
+    nav ul.slide{
+        left: 0;
+        transition: 2s;
+    }
+    .hamburger{
+        float:right;
+    }
+    .hamburger.line{
+        width: 15px;
+        height: 5px;
+        background-color:white;
+    }
+
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+
+.design .animation{
+    width: 300px;
+    margin:100px auto 0;
+    overflow: visible;
+}
+
